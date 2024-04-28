@@ -1,0 +1,471 @@
+/* Скидання стилів */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Стили для секции перед навигационным меню */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  /* элементы по краям */
+  align-items: center;
+  /*элементы по вертикали */
+  background-color: #f5f5f5;
+  padding: 20px 0px;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  /*  элементы по вертикали */
+}
+
+.contact-icons {
+  display: flex;
+  gap: 10px; /* отступ между иконками мессенджеров */
+  margin-right: 24px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /*элементы по вертикали */
+}
+
+.registration {
+  display: flex;
+  gap: 24px;
+}
+
+/* Стили для навигационного меню */
+.header-nav {
+  padding: 14px 0px;
+  /* Задание отступов вверху и внизу */
+  background-color: #283761;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-nav a:hover {
+  color: #007bff;
+}
+
+/* --------Приховуємо мобільне меню та кнопку бургер--------- */
+.menu-button,
+.mobile-menu {
+  display: none;
+}
+
+/* Стили для главной секции */
+.main-section {
+  padding: 50px 0px;
+  /* Увеличил отступы для лучшего визуального эффекта */
+  background-image: url("images/atlantika.png");
+  /* background-size: 1440px 682px; */
+  /* Задаем конкретные размеры для фоновой картинки */
+  background-position: center;
+  /* Центрируем фоновую картинку */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  /* Настраиваемый цвет текста */
+}
+
+.main-section p {
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  margin-bottom: 20px;
+  color: #ffffff;
+  /* Настраиваемый цвет текста */
+}
+
+/* Стили для кнопок */
+button {
+  padding: 10px 20px;
+  background-color: #01a0c6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #01a0c6;
+  border-radius: 8px;
+}
+
+button:hover,
+button:focus {
+  background-color: #027592;
+}
+
+/* Стили для секции с логотипами брендов */
+.brand-logos > .container {
+  display: flex;
+  /* Изменяем на flex */
+  flex-wrap: wrap;
+  /* Перенос элементов на новую строку, если они не помещаются в одну строку */
+  justify-content: center;
+  /*по центру */
+  align-items: center;
+  /* по центру */
+  margin-bottom: 26px;
+  /* Добавляем отступ снизу между блоками */
+  margin-top: 26px;
+  /* Добавляем отступ сверху между блоками */
+  gap: 50px;
+  /* Добавляем небольшие отступы между изображениями */
+}
+
+.brand-logos img {
+  max-width: 130px;
+  /* Максимальная ширина изображений */
+  height: 98px;
+  /* Автоматическая высота */
+}
+
+/* Заклик до дії */
+.custom-section {
+  background-image: url("images/photo 2.png");
+  background-size: cover;
+  /* Растягиваем изображение на всю область секции */
+  background-position: center;
+  /* Центрируем изображение */
+  color: #ffffff;
+  /* Цвет текста */
+  text-align: center;
+  /* Выравнивание текста по центру */
+  padding: 50px 0;
+  /* Внутренние отступы для контента */
+}
+
+.custom-section .content {
+  max-width: 600px;
+  width: 100%;
+  /* Максимальная ширина контейнера с контентом */
+  margin: 0 auto;
+  /* Выравниваем по центру */
+}
+
+.custom-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.custom-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Секция с формой для вопросов */
+.question-section {
+  background-color: #f5f5f5;
+  color: #000000;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.question-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.question-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.question-section .content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.question-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-section form div {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.question-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.question-section input[type="text"],
+.question-section input[type="tel"],
+.question-section input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Стили для футера */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px 0;
+  /* Центрируем содержимое футера по горизонтали */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-left img {
+  display: none;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-left a {
+  color: #fff;
+}
+.footer-left a:hover {
+  color: #007bff;
+}
+
+.footer-right img {
+  display: inline-block;
+  vertical-align: middle; /* Вирівнюємо зображення по вертикалі */
+  margin-right: 1px; /* Задаємо відступ між зображенням і текстом */
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили для футера */
+
+footer div {
+  margin-bottom: 20px;
+}
+.footer-right {
+  text-align: right;
+}
+/* 
+footer nav ul {
+  padding-left: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer nav ul li a:hover {
+  color: #007bff;
+} */
+
+/* Для екранів шириною менше 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 768px;
+  }
+
+  p,
+  nav ul li a {
+    font-size: 18px;
+    /* Повертаємо стандартний розмір тексту для більших екранів */
+  }
+
+  .header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Приховуємо соціальні мережі та телефон */
+  .contact-info .left-content,
+  .contact-info .right-content {
+    display: none;
+  }
+  /* Приховуємо реєстрацію та вхід */
+  .header-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .menu-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+  }
+
+  .menu-icon {
+    stroke: black;
+  }
+
+  .close-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .footer-left img {
+    display: block;
+  }
+
+  .footer-center {
+    display: none;
+  }
+}
+
+/* Для екранів шириною  до 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 16px;
+    /* Зменшуємо розмір тексту до 14px для малих екранів */
+  }
+
+  .brand-logos img {
+    max-width: 100px;
+    height: auto;
+    /* margin: 10px; */
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
+
+/* Сховати оверлей меню за замовчуванням */
+/* .overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); */
+/* Півпрозорий фон */
+/* z-index: 1000; */
+/*відображати поверх інших елементів */
+/* } */
+
+/* Підказка для користувача, як натискати на бургер кнопку */
+/* .burger-menu {
+  cursor: pointer;
+} */
+
+/* Стилі для бургер кнопки */
+/* .burger-icon {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+} */
